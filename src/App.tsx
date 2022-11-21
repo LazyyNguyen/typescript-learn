@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import {LoggedIn} from './components/status/LoggedIn'
+import {Counter} from './components/status/Counter'
 function App() {
 
   return (
     <div className="App">
-      <LoggedIn/>
+      <Counter/>
     </div>
   );
 }
