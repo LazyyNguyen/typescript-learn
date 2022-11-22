@@ -1,22 +1,12 @@
 import React from 'react';
 import './App.css';
 import { List } from './components/generics/List';
+import { RandomNumber } from './components/restriction/RandomNumber';
 function App() {
 
   return (
     <div className="App">
-      {/* <List
-        items={['Lemon', 'Apple', 'Banana', 'Watermelon']}
-        onClick={(item) => console.log(item)}
-      />
-      <List
-        items={[1, 2, 3, 4]}
-        onClick={(item) => console.log(item)}
-      /> */}
-            <List
-        items={[{id:0,name: 'Apple'},{id:1,name: 'Banana'},{id:2,name: 'Watermelon'}]}
-        onClick={(item) => console.log(item)}
-      />
+      <RandomNumber value={10} isPosition/>
     </div>
   );
 }
