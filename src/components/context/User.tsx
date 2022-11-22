@@ -17,7 +17,7 @@ export const User = () => {
     const handleLogout = () => {
         setIsLoggedIn(false);
         if(userContext){
-            useContext.setUser(null)
+            userContext.setUser(null)
         }
     }
     return(
@@ -26,8 +26,8 @@ export const User = () => {
             <button onClick={handleLogout}>Logout</button>
             
             <div>User is {isLoggedIn? `Log in
-            Username: ${useContext?.user?.name}
-            UserEmail: ${useContext?.user?.email}`
+            Username: ${userContext?.user?.name}
+            UserEmail: ${userContext?.user?.email}`
             
             : 'Log out'}</div>
         </div>
