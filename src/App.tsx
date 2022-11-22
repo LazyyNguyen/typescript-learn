@@ -1,11 +1,13 @@
 import React from 'react';
 import './App.css';
-import { Toast } from './components/templateliterals/Toast';
+import { CustomButton } from './components/html/Button';
 function App() {
 
   return (
     <div className="App">
-      <Toast position='left-bottom'/>
+      <CustomButton variant="primary" onClick={()=> console.log('Clicked')}>
+      Primary button
+      </CustomButton>
     </div>
   );
 }
