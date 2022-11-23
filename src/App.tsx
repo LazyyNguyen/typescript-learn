@@ -1,13 +1,13 @@
 import React from 'react';
 import './App.css';
-import { CustomButton } from './components/html/Button';
+import { Text } from './components/polymorphic/Text';
 function App() {
 
   return (
     <div className="App">
-      <CustomButton variant="primary" onClick={()=> console.log('Clicked')}>
-      Primary button
-      </CustomButton>
+      <Text size='lg' as='h1'>Heading</Text>
+      <Text size='md' as='p'>Paragraph</Text>
+      <Text size='sm' as='label' htmlFor='someId'>Label</Text>
     </div>
   );
 }
